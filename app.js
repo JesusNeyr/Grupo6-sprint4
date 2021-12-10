@@ -4,7 +4,7 @@ const path = require('path');
 
 //motor de plantilla
 app.set('views engine','ejs');
-app.set('views',path.resolve(__dirname,'public/views'));
+app.set('views',path.resolve(__dirname,'views'));
 
 //carpeta publica
 app.use(express.static('public'));
