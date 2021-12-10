@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <%- include("../partials/head.ejs") %> 
+</head>
+<body>
+<%- include("../partials/menuHeader.ejs") %> 
+    <section class="detailContact">
+        <div class="contContact">
+            <div class="contC1">
+                <h3>CONTACTO</h3>
+                <img src="img/oso.png" alt="oso">
+            </div>
+            <div class="contC2">
+                <form class="contactForm" action="#">
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required/>
+                    <input type="email" placeholder="Email" name="email" id="email" required/>
+                    <textarea placeholder="Mensaje" name="mensaje" id="msj" cols="30" rows="10" required></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="contC3 tablet"> 
+                <div class="cajaMapa">
+                    <img src="img/mapa.png" alt="mapa">
+                </div>
+                <div class="ContC3Info">
+                    <div class="C3Info1">
+                        <h4>Dirección</h4>
+                        <p>Av. 9 de Julio 100 - CABA</p>
+                    </div>
+                    <div class="C3Info2">
+                        <h4>Horarios</h4>
+                        <p>¡ABRIMOS TODOS LOS DIAS!</p>
+                        <p>Horarios</p>
+                        <p>Lunes a Viernes de 12 a 19hs</p>
+                        <p>Sábado de 11 a 19hs</p>
+                        <p>Domingo de 14 a 19hs</p>
+                        <p>Podes retirar tu compra online o bien hacer tu compra presencial</p>
+                        <p><i class="fab fa-whatsapp"></i> +54 9 11 2345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contGrid">
+            <div class="div1"> 
+                <div class="pagosEnvios">
+                    <h4>MEDIOS DE PAGO</h4>
+                    <ul class="tarjetas">
+                        <li><img src="img/TARJETAS/visa@2x.png" alt="Visa"></li>
+                        <li><img src="img/TARJETAS/banelco@2x.png" alt="Banelco"></li>
+                        <li><img src="img/TARJETAS/mastercard@2x.png" alt="MasterCard"></li>
+                        <li><img src="img/TARJETAS/rapipago@2x.png" alt="Rapipago"></li>
+                        <li><img src="img/TARJETAS/mercadopago@2x.png" alt="Mercadopago"></li>
+                        <li><img src="img/TARJETAS/tarjeta-naranja@2x.png" alt="Tarjeta naranja"></li>
+                        <li><img src="img/TARJETAS/pagofacil@2x.png" alt=""></li>
+                        <li><img src="img/TARJETAS/tarjeta-shopping@2x.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="pagosEnvios">
+                    <h4>ENVIOS</h4>
+                    <ul class="tarjetas">
+                        <li><img src="img/TARJETAS/oca@2x.png" alt="Oca"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div2">         
+                <div class="contacto">
+                    <h4>CONTACTO</h4>
+                    <ul class="infoList">
+                        <li><i class="fas fa-phone-alt"></i> 11 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> contacto@gugu.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. 9 de julio 100 - CABA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div3">        
+                <div class="redesFooter">
+                    <h4>NUESTRAS REDES</h4>
+                    <ul class="infoList redesList">
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <p>GUGU &copy; 2021.</p>
+    </footer>
+</body>
+</html>

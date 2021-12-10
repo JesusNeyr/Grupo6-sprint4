@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"BICHO CON BLOQUES + ARRASTRE",
+        "precio":2500,
+        "descripcion":"El bichito de madera acompaña a los peques en sus primeros pasos 🤩🥰",
+        "img":"trenes.jpg",
+        "peso":"5Kg",
+        "tamanio":"375cmx24cm",
+        "cat":[1,2,3,4,5],
+        "offPorcen":null
+    },
+    {
+        "id":2,
+        "name":"JUGUETE PRONO + BUSCA CAMINO",
+        "precio":4.675,
+        "descripcion":"¡Juego didáctico 2 en 1! Motricidad, cognición y creatividad para ellos 🥰😍",
+        "img":"trenes.jpg",
+        "peso":"5Kg",
+        "tamanio":"26cmx26cmx20cm",
+        "cat":[1,2,3,4,5],
+        "offPorcen":50},
+    {
+        "id":3,
+        "name":"Tren de madera",
+        "precio":2500,
+        "descripcion":"Tren de madera para jugar con amigos",
+        "img":"trenes.jpg",
+        "peso":"5Kg",
+        "tamanio":"375cmx24cm",
+        "cat":[1,2,3,4,5],
+        "offPorcen":20},
+    {
+        "id":4,
+        "name":"JENGA DE MADERA CON COLORES",
+        "precio":2.949,
+        "descripcion":"¡Hermoso juego que nunca pasa de moda! Para divertirse en familia 😍🙌",
+        "img":"michal-bozek-RcxR1aLw8X0-unsplash.jpg",
+        "peso":"5Kg",
+        "tamanio":"375cmx24cm",
+        "cat":[1,2,3,4,5],
+        "offPorcen":null
+        }
+]
