@@ -1,6 +1,5 @@
-const express = require('express');
 const fs=require('fs');
-const jsonDb=fs.readFileSync('./controller/db.json');
+const jsonDb=fs.readFileSync('./data/db.json');
 const db=JSON.parse(jsonDb);
 
 const controllerPages = {

@@ -7,8 +7,9 @@
         "img":"trenes.jpg",
         "peso":"5Kg",
         "tamanio":"375cmx24cm",
-        "cat":[1,2,3,4,5],
-        "offPorcen":null
+        "cat":"Madera",
+        "offPorcen":null,
+        "cantidad":1000
     },
     {
         "id":2,
@@ -18,8 +19,10 @@
         "img":"trenes.jpg",
         "peso":"5Kg",
         "tamanio":"26cmx26cmx20cm",
-        "cat":[1,2,3,4,5],
-        "offPorcen":50},
+        "cat":"Didactico",
+        "offPorcen":50,
+        "cantidad":100
+    },
     {
         "id":3,
         "name":"Tren de madera",
@@ -28,8 +31,10 @@
         "img":"trenes.jpg",
         "peso":"5Kg",
         "tamanio":"375cmx24cm",
-        "cat":[1,2,3,4,5],
-        "offPorcen":20},
+        "cat":"Madera",
+        "offPorcen":20,
+        "cantidad":2000
+    },
     {
         "id":4,
         "name":"JENGA DE MADERA CON COLORES",
@@ -38,7 +43,8 @@
         "img":"michal-bozek-RcxR1aLw8X0-unsplash.jpg",
         "peso":"5Kg",
         "tamanio":"375cmx24cm",
-        "cat":[1,2,3,4,5],
-        "offPorcen":null
-        }
+        "cat":"Madera",
+        "offPorcen":null,
+        "cantidad":10000
+    }
 ]

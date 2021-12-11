@@ -449,7 +449,36 @@ list-style: none;
     border-radius: 5px;
 }
 /********FIN DE CHANGE PRODUCT EN ADMIN*****/
-
+/********INICIO DE LIST PRODUCT ADMIN***/
+.gridProductOcultoMobile{
+    display: none;
+}
+.gridListProductAdminHead{
+    background: #FF7878;
+    padding: 5px;
+}
+.gridListProductAdmin > div{
+    display: grid;
+    grid-template-columns: 1rem repeat(1,2fr) 3rem;
+}
+.gridListProductAdmin > div > div{
+    text-align: center;
+}
+.gridListProductAdminItem >div {
+    padding: 10px;
+}
+.gridListProductAdminItem > div:nth-child(1), .gridListProductAdminItem > div:nth-child(5){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #515151;
+    border-right: 1px solid #515151;
+    padding: 10px;
+}
+.gridListProductAdminItem:nth-child(odd){
+    background: #FF7878;
+}
+/********FIN DE LIST PRODUCT ADMIN***/
 
  /****LOGIN****/
  .sectionLogin{
@@ -543,14 +572,6 @@ list-style: none;
     display: none;
 }
 /****FIN LOGIN****/
-
-
-
-/*mantener aca abajo*/
-/*mostrar y oculta menu*/
-.tabletHeader{
-    display: none;
-}
 /* CSS de perfil de usuario */
 .seccion-usuario{
     display: flex;
@@ -872,6 +893,11 @@ list-style: none;
     display: none;
 }
 /* Finaliza Productos */
+/*mantener aca abajo*/
+/*mostrar y oculta menu*/
+.tabletHeader{
+    display: none;
+}
 @media only screen and (min-width: 768px){
     /*header*/
     .searchFormHeader > input{
@@ -925,6 +951,17 @@ list-style: none;
         border-left: 3px solid #909090;
     }
     /******** ADMIN SECCION FIN ********/
+    /******** ADMIN SECCION LIST PRODUCT INICIO ********/
+    .gridProductOcultoMobile{
+        display: block;
+    }
+    .gridListProductAdmin > div{
+        grid-template-columns: 3rem repeat(3,1fr) 4rem;
+    }
+    .gridListProductAdminItem > div > i{
+        padding: 5px;
+    }
+    /******** ADMIN SECCION LIST PRODUCT FIN ********/
 
 
     /******COMIENZA SECCION DE LOGIN********/
@@ -973,8 +1010,6 @@ list-style: none;
     }
 
     /*FIN DE RECUPERAR CONTRASEÑA*/
-
-
     /* CSS de perfil de usuario incia */
     .seccion-usuario_perfil-compras{
         display: flex;

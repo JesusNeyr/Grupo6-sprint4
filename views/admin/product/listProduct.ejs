@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Productos</title>
+    <%- include("../../partials/head.ejs") %>
+    <link rel="stylesheet" href="/css/addProducto2.css">
+</head>
+<body>
+    <div class="contAdminMain">
+        <%- include("../../partials/admHeader.ejs") %>
+        <section>
+            <div class="contAdminPrin">
+                <div class="gridListProductAdmin">
+                    <div class="gridListProductAdminHead">
+                        <div>#</div>
+                        <div>Producto</div>
+                        <div class="gridProductOcultoMobile">Categoría</div>
+                        <div class="gridProductOcultoMobile">Precio</div>
+                        <div>Acción</div>
+                    </div>
+                    <% db.forEach(element => { %>
+                        <div class="gridListProductAdminItem">
+                            <div><%= element.id %></div>
+                            <div><%= element.name %></div>
+                            <div class="gridProductOcultoMobile"><%= element.cat %></div>
+                            <div class="gridProductOcultoMobile"><%= element.precio %></div>
+                            <div><i class="fas fa-edit"></i> <i class="fas fa-trash-alt gridProductOcultoMobile"></i></div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+        </section>
+    </div> 
+</body>
+</html>

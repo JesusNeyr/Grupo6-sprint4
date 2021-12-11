@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar producto</title>
     <%- include("../../partials/head.ejs") %>
+    <link rel="stylesheet" href="/css/addProducto2.css">
 </head>
 <body>
     <div class="contAdminMain">
@@ -13,7 +14,31 @@
         <%- include("../../partials/admHeader.ejs") %>
         <section>
             <div class="contAdminPrin">
-
+                <form class="adminAddProductForm" action="#" method="post">
+                    <h3>Agregar nuevo producto</h3>
+                    <input placeholder="Nombre del producto" name="namePr" type="text">
+                    <input placeholder="Precio" type="number" name="precioPr" id="">
+                    <input placeholder="Peso" name="pesoPr" type="text">
+                    <input placeholder="Tamaño" name="tamanioPr" type="text">
+                    <div>
+                        <label for="">Subir imagen</label>
+                        <input type="file" name="file" id="">
+                    </div>
+                    <div>
+                        <label for="">Cat1</label>
+                        <input type="checkbox" name="categoria" value="cat1" id="">
+                    </div>
+                    <div>
+                        <label for="">Cat2</label>
+                        <input type="checkbox" name="categoria" value="cat2" id="">
+                    </div>
+                    <div>
+                        <label for="">Cat3</label>
+                        <input type="checkbox" name="categoria" value="cat3" id="">
+                    </div>
+                    <textarea placeholder="Descripcion" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" name="" id="" value="Crear Producto">
+                </form>
             </div>
         </section>
     </div>
