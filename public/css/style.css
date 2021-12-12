@@ -16,10 +16,11 @@ body{
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 100;
 }
-.logoHeader > img{
+.logoHeader > a > img{
     height: 70px;
 }
 .searchHeader{
@@ -296,6 +297,67 @@ list-style: none;
     padding: 15px;
 }
 /******** REGISTRO SECCION FIN ********/
+/******** CONTACTO PAGE INICIO ********/
+.detailContact{
+    background: #F3F0D7;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    border:1px solid #000;
+    border-radius: 5px;
+}
+.contContact{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}    
+.contC1 { 
+    grid-area: 1 / 1 / 2 / 6; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.contC1 > h3{
+    font-size: 2rem;
+}
+.contC1 > img{
+    width: 20%;
+}
+.cajaMapaCont{
+    width: 90%;
+    background: #489aee;
+    line-height: 0;
+    margin: auto;
+}
+.cajaMapaCont > img{
+    width: 100%;
+}
+.contC2 { grid-area: 2 / 1 / 6 / 6; }
+.contC3 { grid-area: 2 / 3 / 6 / 6;}
+.contactForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactForm > input{
+    width: 90%;
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+.contactForm > textarea{
+    width: 90%;
+    resize: vertical;
+}
+.contactForm > input[type="submit"]{
+    background: #CEE5D0;
+    border: 1px solid #c7c7c7;
+}
+
+/******** CONTACTO PAGE FIN ********/
 /******** ADMIN SECCION INICIO ********/
 .adminHeader{
     background: #F3F0D7;
@@ -810,7 +872,7 @@ list-style: none;
 /* productoDetail fin */
 /* Inicia Productos css */
 .ordenar-productos-container{
-    margin-top: 100px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     padding:10px;
@@ -1184,7 +1246,19 @@ list-style: none;
         width: 10%;
     }
     /**FIN SECCION DELOGIN**/
-
+    /**INICIO PAGE CONTACT**/
+    .contContact{
+        grid-template-rows:auto
+    }
+    .contC1{
+        grid-area: auto;
+        grid-column: span 5;
+    }
+    .contC1 > img{
+        width: 14%;
+    }
+    .contC2 { grid-area: 2 / 1 / 6 / 3; }
+    /**FIN PAGE CONTACT**/
     /* Inicia ProductDetail css */
     /*producto*/
     .detailProduct{
@@ -1221,8 +1295,6 @@ list-style: none;
         width: 90%;
         flex-wrap: wrap;
     }
-
-
     /*footer*/
     .contGrid{
         grid-template-columns: repeat(2, 1fr);
