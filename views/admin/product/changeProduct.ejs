@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Modificar producto</title>
-
-    <%- include("../../partials/head")  %> 
-    <!--eliminar luego de pasarlo al style-->
-    <link rel="stylesheet" href="/css/changeProduct.css">
-    <!--eliminar luego de pasarlo al style-->
-
-</head>
-<body>
-    
-    <div class="changeProduct1">
+<%- include("../../partials/head.ejs",{title:"Modificar producto"}) %>
+  <div class="changeProduct1">
         <%- include("../../partials/admHeader.ejs") %>
 
     <div class="changeProduct2">
@@ -50,6 +35,4 @@
         </form>
     </div>
     </div>
-
-</body>
-</html>
+<%- include("../../partials/footerAdmin.ejs") %>

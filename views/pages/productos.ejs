@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProducList</title>
-    <%- include ('../partials/head') %>
-    <!-- <link rel="stylesheet" href="css/productos.css"> -->
-</head>
-<body>
-    <%- include('../partials/menuHeader')  %>
+<%- include ('../partials/head',{title:"Productos"}) %>
+<%- include('../partials/menuHeader')  %>
     <section class="filter-products">
         <div class="ordenar-productos-container">
             <div class="ordenar-products">
@@ -74,6 +64,4 @@
             <% }) %>
         </article>
     </section>
-    <%- include('../partials/footerBase')  %> 
-</body>
-</html>
+<%- include('../partials/footerBase')  %> 

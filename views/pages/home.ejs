@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <%- include("../partials/head")  %> 
-</head>
-<body>
+<%- include("../partials/head",{title:"Home"})  %> 
 <%- include("../partials/menuHeader.ejs")  %>  
-
     <!-- Seccion del carrusel -->
     <section class="carrouselSection">
         <!-- contenedor de box-imagenes -->
@@ -102,5 +92,3 @@
     </section>
     <!-- footer -->
 <%- include("../partials/footerBase.ejs")  %>
-</body>
-</html>

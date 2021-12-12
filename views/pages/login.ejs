@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    <%- include("../partials/head")  %> 
-</head>
-
-<body>
+<%- include("../partials/head",{title:"Iniciar sesion"})  %> 
 <%- include("../partials/menuHeader.ejs")  %>  
-
-
     <!--LOGIN-->
     <div class="iniciar-sesion">
         <h3>INICIAR SESIÓN</h3>
         <img src="img/oso.png" alt="oso">
     </div>
-
     <section class="sectionLogin">
         <div class="divLogin">
             <div class="divLogin2">
@@ -37,9 +24,5 @@
             </div> 
         </div>
     </section>
-
     <!-- FOOTER -->
 <%- include("../partials/footerBase.ejs")  %>
-
-</body>
-</html>

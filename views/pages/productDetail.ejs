@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del producto</title>
-    <%- include ('../partials/head') %> 
-    <!-- <link rel="stylesheet" href="css/detalleProduct.css"> -->
-</head>
-<body>
+<%- include ('../partials/head',{title:"Detalle del producto"}) %> 
 <%- include("../partials/menuHeader.ejs")  %>  
     <section class="detailProduct">
         <div class="productImage">
@@ -99,5 +89,3 @@
         </div>
     </section>
 <%- include("../partials/footerBase.ejs")  %>
-</body>
-</html>

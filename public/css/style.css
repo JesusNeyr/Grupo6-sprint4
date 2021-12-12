@@ -7,6 +7,9 @@ body{
     background-size: 10em;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .header{
     background: #F3F0D7;
@@ -564,8 +567,6 @@ list-style: none;
     display: flex;
     justify-content:space-evenly;
     align-items: flex-end;
-    margin-top:40px;
-    padding-bottom: 0;
 }
 
 .iniciar-sesion > h3{
@@ -634,6 +635,178 @@ list-style: none;
     display: none;
 }
 /****FIN LOGIN****/
+/*********** CARRITO INICIO **************/
+.carrContenido{
+    width: 90%;
+    margin: auto;
+    /*background-color: #F3F0D7;*/
+    padding: 6px;
+}
+.carrContenido>h3{
+    margin: 0;
+    font-size: 2rem;
+    border-bottom: solid 4px #ff7878;
+}
+.infoCarrito{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 4px #ff7878;
+    font-weight: bold;
+}
+.imgCarrito{
+    display: flex;
+    margin-top: 20px;
+}
+.carrImagen {
+    margin-right: 20px;
+    width: 20%;
+} 
+.carrImagen > img{
+    width: 100%;
+}
+.carrTren{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.imagenCarrito{
+    width: 500px;
+}
+.imagenCarrito> img{
+    width: 100%;
+}
+.carrColumna{
+    display: flex;
+}
+.carrColumna > div{
+    background-color: #CEE5D0;
+    padding: 10px;
+    border: solid 1px black
+}
+.carritoInfoCont{
+    display: flex;
+    justify-content: space-between;
+}
+.carrEliminar{
+    margin-right:20px ;
+}
+.carritoSubtotal{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-top:4px solid #ff7878; /* cambia arriba*/
+    border-bottom:4px solid #ff7878;/*cambia abajo*/
+}
+.infoEnvio > span{
+    font-weight: bold;
+    color:#000 ;
+    
+}
+.infoCalcular > button{
+    font-weight: bold;
+    background-color: #CEE5D0;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 0 10px 10px 0;  
+}
+.infoCalcular > input{
+    padding: 10px;
+    
+}
+.infoCalcular{
+    display: flex;
+}
+.infoRetiro{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    border-bottom:4px solid #ff7878;
+}
+.infoCodigo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.infoPromocion {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%;
+}
+.infoPromocion > p{
+    display: inline;
+    margin: 0;
+}
+.infoPromocion > div{
+    background-color: #fff;
+    padding: 10px;
+    border: solid 1px black;
+    margin: 0 5px 5px 0;
+}
+.infoTotal{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.infoTotal .numero{
+    border-bottom: 1px solid black;
+}
+/*********** CARRITO FIN **************/
+/*********** AÑADIR PRODUCTO INICIO **************/
+.adminAddProductForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adminAddProductForm > h3{
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    border-bottom: 10px solid #FF7878;
+}
+.adminAddProductForm > input{
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+    outline: none;
+}
+.adminAddProductForm > div > label{
+    margin-right: 4px;
+}
+.adminAddProductForm > div{
+    display: flex;
+    justify-content: space-between;
+}
+.adminAddProductForm > textarea{
+    width: 80%;
+    resize: vertical;
+}
+.adminAddProductForm > input[type="submit"]{
+    width: auto;
+    border: none;
+    background: #FF7878;
+    border-radius: 5px;
+}
+/*********** AÑADIR PRODUCTO FIN **************/
+/*********** SOMOS INICIO **************/
+.quienesSomosCont > h3{
+    text-align: center;
+    font-size: 1rem;
+    margin: 3px 0;
+    margin-bottom: 100px;
+}
+.somosLogo{
+    width: 50%;
+    margin: 0 auto;
+}
+.somosLogo > img{
+    width: 100%;
+}
+/*********** SOMOS FIN **************/
 /* CSS de perfil de usuario */
 .seccion-usuario{
     display: flex;
@@ -1024,11 +1197,13 @@ list-style: none;
         padding: 5px;
     }
     /******** ADMIN SECCION LIST PRODUCT FIN ********/
-
-
+    /******** SOMOS INICIO ********/
+    .somosLogo{ width: 30%;}
+    /******** SOMOS FIN ********/
     /******COMIENZA SECCION DE LOGIN********/
-    .iniciar-sesion img{
+    .iniciar-sesion > img{
         display: block;
+        z-index: 1;
     }
     .iniciar-sesion h3{
         font-size: 30px;
