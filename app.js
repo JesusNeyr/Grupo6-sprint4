@@ -15,9 +15,12 @@ const rutasPages = require('./routes/pagesRoutes');
 const rutasPerfil= require('./routes/perfilRoutes')
 //requerimos rutas admin
 const rutasAdmin= require('./routes/adminRoutes')
+//ruta de productos
+const rutasProducts=require('./routes/productsRoutes')
 app.use('/',rutasPages);
 app.use('/perfil',rutasPerfil);
 app.use('/admin',rutasAdmin);
+app.use('/products',rutasProducts)
 
 
 

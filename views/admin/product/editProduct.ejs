@@ -1,0 +1,38 @@
+<%- include("../../partials/head.ejs",{title:"Modificar producto"}) %>
+  <div class="changeProduct1">
+        <%- include("../../partials/admHeader.ejs") %>
+
+    <div class="changeProduct2">
+        <form action="/productos" method="">
+
+            <section class="changeProductFile">
+                <div class="form-changeProduct">                        
+                    <label for="photo">Foto del producto</label>
+                    <input type="file" name="photo" accept=".jpg" value="" > 
+                </div>
+            </section>
+
+            <section class="changeProductButtons">
+
+                <div class="form-changeProduct">
+                    <label for="name">Nombre del producto</label>
+                    <input type="text" name="nombre" id="nombreProducto" value="" required>
+                </div>     
+
+                <div class="form-changeProduct">
+                    <label for="price">Precio</label>
+                    <input type="text" name="price" id="price" value="" required>
+                </div>
+
+                <div class="form-changeProduct">
+                    <label for="information">informacion adicional</label>
+                    <input type="text" name="information" placeholder="Peso" value="" required>
+                    <input type="text" name="information" placeholder="Tamaño" value="" crequired> 
+                </div>
+                <button type="submit">Guardar cambios</button>
+            </section>
+
+        </form>
+    </div>
+    </div>
+<%- include("../../partials/footerAdmin.ejs") %>
