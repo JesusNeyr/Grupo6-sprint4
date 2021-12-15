@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const  methodOverride = require('method-override')
 
 const controllerProduct=require('../controller/controllerProduct');
-router.get('/create', controllerProduct.create);
-router.get('/:id/edit', controllerProduct.edit);
 
+router.get('/', controllerProduct.productos);
+router.get('/create', controllerProduct.create);
+
+router.get('/edit/:id', controllerProduct.edit);
+router.put('/edit/:id', controllerProduct.update);
+
+router.get('/:id', controllerProduct.productDetail);
 module.exports=router;

@@ -3,11 +3,13 @@
         <%- include("../../partials/admHeader.ejs") %>
 
     <div class="changeProduct2">
-        <form action="/productos" method="">
+        <form action="/products/edit/<%= productosEncontrado.id %>?_method=PUT " method="POST">
 
             <section class="changeProductFile">
                 <div class="form-changeProduct">                        
-                    <label for="photo">Foto del producto</label>
+                    <h2>Foto actual del Producto</h2>
+                    <img src="/img/<%= productoEncontrado.img %> " alt="<%= productoEncontrado.name%>" width="300px" height="300px">
+                    <label for="photo">cambiar img del producto</label>
                     <input type="file" name="photo" accept=".jpg" value="" > 
                 </div>
             </section>
@@ -16,18 +18,18 @@
 
                 <div class="form-changeProduct">
                     <label for="name">Nombre del producto</label>
-                    <input type="text" name="nombre" id="nombreProducto" value="" required>
+                    <input type="text" name="nombre" id="nombreProducto" value="<%= productoEncontrado.name %> " required>
                 </div>     
 
                 <div class="form-changeProduct">
                     <label for="price">Precio</label>
-                    <input type="text" name="price" id="price" value="" required>
+                    <input type="text" name="precio" id="price" value="$ <%= productoEncontrado.precio %> " required>
                 </div>
 
                 <div class="form-changeProduct">
                     <label for="information">informacion adicional</label>
-                    <input type="text" name="information" placeholder="Peso" value="" required>
-                    <input type="text" name="information" placeholder="Tamaño" value="" crequired> 
+                    <input type="text" name="information" placeholder="Peso" value=" <%= productoEncontrado.peso %>" required>
+                    <input type="text" name="information" placeholder="Tamaño" value=" <%= productoEncontrado.tamanio %>" crequired> 
                 </div>
                 <button type="submit">Guardar cambios</button>
             </section>
