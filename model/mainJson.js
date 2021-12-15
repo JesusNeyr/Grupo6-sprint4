@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path=require('path');
 
-const mainController=function (archivojson) {
+const mainController=function(archivojson) {
     return{
-        archivo:path.resolve(__dirname,'../data/',`${archivojson}`),
+        archivo:path.resolve(__dirname,'../data/',`${archivojson}.json`),
         
         //leemos el Archivo Json
         readFile:function () {

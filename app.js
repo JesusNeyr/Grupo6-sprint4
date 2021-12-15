@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 //override
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
 
 //requerimos rutas main
 const rutasPages = require('./routes/pagesRoutes');
