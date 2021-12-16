@@ -49,18 +49,20 @@
         <article class="products-lista-articulos">
             <% db.forEach(element => { %>
                 <div class="products-lista-articulos-contenedor_producto">
-                    <img src="/img/<%= element.img %> " alt="articulox">
-                    <div class="contenedor-producto-info">
-                        <p><%= element.name %> </p>
-                        <p>$<%= element.precio %> </p>
-                    </div>
-                    <% if (element.offPorcen) { %>
-                        <div class="contenedor-producto-cuota">
-                            <p>Hasta <%=element.offPorcen%>% de descuento  </p>
+                        <a href="/products/<%= element.id %>">
+                        <img src="/img/products/<%= element.img %> " alt="articulox">
+                        <div class="contenedor-producto-info">
+                            <p><%= element.name %> </p>
+                            <p>$<%= element.precio %> </p>
                         </div>
-                    <% } else { %><% } %> 
-                    
-                </div>
+                        <% if (element.offPorcen) { %>
+                            <div class="contenedor-producto-cuota">
+                                <p>Hasta <%=element.offPorcen%>% de descuento  </p>
+                            </div>
+                            <% } else { %><% } %> 
+                            
+                        </a>
+                        </div>
             <% }) %>
         </article>
     </section>

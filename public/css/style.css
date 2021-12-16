@@ -1103,7 +1103,7 @@ list-style: none;
     min-width: 225px;
     max-width: 330px;
 }
-.products-lista-articulos-contenedor_producto>img{
+.products-lista-articulos-contenedor_producto>a>img{
     min-width: 200px;
     min-height: 200px;
     width: 90%;
@@ -1117,7 +1117,7 @@ list-style: none;
     border: 1px solid rgba(34, 201, 92, 0.3);
     color: hsl(141, 48%, 45%);
 }
-.products-lista-articulos-contenedor_producto>div,img{
+.products-lista-articulos-contenedor_producto>div{
     margin:2px 0;
 }
 /* ocultos para phone */

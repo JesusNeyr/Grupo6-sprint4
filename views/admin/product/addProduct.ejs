@@ -5,29 +5,35 @@
         <%- include("../../partials/admHeader.ejs") %>
         <section>
             <div class="contAdminPrin">
-                <form class="adminAddProductForm" action="#" method="post">
+                <form class="adminAddProductForm" action="/products" method="post" enctype="multipart/form-data">
                     <h3>Agregar nuevo producto</h3>
-                    <input placeholder="Nombre del producto" name="namePr" type="text">
-                    <input placeholder="Precio" type="number" name="precioPr" id="">
-                    <input placeholder="Peso" name="pesoPr" type="text">
-                    <input placeholder="Tamaño" name="tamanioPr" type="text">
+                    <input placeholder="Nombre del producto" name="name" type="text">
+                    <input placeholder="Precio" type="number" name="precio" id="">
+                    <input placeholder="Peso" name="peso" type="text">
+                    <input placeholder="Tamaño" name="tamanio" type="text">
                     <div>
                         <label for="">Subir imagen</label>
-                        <input type="file" name="file" id="">
+                        <input type="file" name="img" id="">
                     </div>
-                    <div>
+                    <select name="cat" id="">
+                        <option value="Cat1">Cat1</option>
+                        <option value="Cat2">Cat2</option>
+                    </select>
+                    <!-- <div>
                         <label for="">Cat1</label>
-                        <input type="checkbox" name="categoria" value="cat1" id="">
+                        <input type="checkbox" name="cat" value="cat1" id="">
                     </div>
                     <div>
                         <label for="">Cat2</label>
-                        <input type="checkbox" name="categoria" value="cat2" id="">
+                        <input type="checkbox" name="cat" value="cat2" id="">
                     </div>
                     <div>
                         <label for="">Cat3</label>
-                        <input type="checkbox" name="categoria" value="cat3" id="">
-                    </div>
-                    <textarea placeholder="Descripcion" name="" id="" cols="30" rows="10"></textarea>
+                        <input type="checkbox" name="cat" value="cat3" id="">
+                    </div> -->
+                    <input placeholder="Descuento" name="offPorcen" type="number">
+                    <input type="number" name="cantidad" id="" placeholder="Cantidad de Producto">
+                    <textarea placeholder="Descripcion" name="descripcion" id="" cols="30" rows="10"></textarea>
                     <input type="submit" name="" id="" value="Crear Producto">
                 </form>
             </div>

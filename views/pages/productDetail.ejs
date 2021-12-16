@@ -2,7 +2,7 @@
 <%- include("../partials/menuHeader.ejs")  %>  
     <section class="detailProduct">
         <div class="productImage">
-            <img src="img/trenes.jpg" alt="tren de madera">
+            <img src="/img/products/<%= articulo.img %>" alt="tren de madera">
         </div>
         <div class="info">
             <h4>Inicio/Producto/Trenes</h4>
@@ -56,6 +56,10 @@
                 </div>
                 <p>Pódes retirar tu compra online o bien hacer tu compra presencial</p>
             </div>
+            <form action="/products/<%= articulo.id %> " method="post">
+                <input type="submit" value="ELIMINAR">
+            </form>
+            <a href="/products/<%= articulo.id %>/edit">EDITAR</a>
         </div>
     </section>
     <section class="relacionados">
