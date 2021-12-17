@@ -23,6 +23,10 @@ body{
     top: 0;
     z-index: 100;
 }
+.menuHeader{
+    position: absolute;
+    width: 100%;
+}
 .logoHeader > a > img{
     height: 70px;
 }
@@ -57,9 +61,15 @@ body{
     padding: 3px;
 }
 .menuHeader > ul{
+    background: #F3F0D7;
+    height: 100vh;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /*footer*/
 .footer{
@@ -74,7 +84,7 @@ body{
     font-size: 10px;
 }
 .footer > div h4{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 10px 0;
     padding-left: 10px;
 }
@@ -121,9 +131,6 @@ body{
 .contGeneral{
     width: 90%;
     margin: auto;
-}
-.carrouselSection{
-    margin-top: 90px;
 }
 .contenedor-imagenes-carruselHome{
     overflow: hidden;
@@ -568,18 +575,11 @@ list-style: none;
     justify-content:space-evenly;
     align-items: flex-end;
 }
-
-.iniciar-sesion > h3{
-    font-size:19px;
-    margin-top: 100px;
-}
 .iniciar-sesion > img{
     display: none;
     width:13% ;
     position: inherit;
-    margin-top: 85px;
     display: none;
-    margin-bottom: -20px;
 }
 
 .divLogin2 { grid-area: 2 / 1 / 6 / 6; }
@@ -899,9 +899,17 @@ list-style: none;
     margin: auto;
     padding: 10px;
     border:1px solid #000;
-    margin-top: 20px;
     border-radius: 5px;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .info > h4{
     margin: 10px 0;
@@ -910,6 +918,7 @@ list-style: none;
 .info > h3{
     font-size: 1.8rem;
     margin: 0;
+    text-align: center;
 }
 .info > .infoPrecio{
     margin: 10px 0;
@@ -921,13 +930,13 @@ list-style: none;
 .productImage{
     width: 80%;
     line-height: 0;
-    margin: auto;
     text-align: center;
+    margin: 0 auto;
 }
 .productImage > img{
-    max-width: 70%;
+    max-width: 100%;
     border: 1px solid #333;
-    min-width: 350px;
+    min-width: 300px;
 }
 .infoDescrip{ display: none;}
 .buttonCarrito{
@@ -938,12 +947,14 @@ list-style: none;
     border-radius: 5px;
     outline: 1px solid #333;
 }
-.redes{
+.redesProducDetail{
     display: flex;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
+    justify-content: center;
 }
-.redes > i{
+.redesProducDetail > i{
     min-width: 36px;
     padding: 5px;
     font-size: 1.5rem;
@@ -1001,10 +1012,10 @@ list-style: none;
 }
 .specsInfoName{
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .specsInfoResult{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #FF7878;
 }
 /*relacionados*/
@@ -1132,6 +1143,13 @@ list-style: none;
 /*mostrar y oculta menu*/
 .tabletHeader{
     display: none;
+}
+.ocultarMenu{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all ease 1s;
+}
+.mostrarMenu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 @media only screen and (min-width: 768px){
     /*header*/
@@ -1276,8 +1294,26 @@ list-style: none;
     /* ^Finalizo CSS de Perfil de usuario ^ */
 
     /* Inicia productDetail css */
-    .info > .infoPrecio{
+    .info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info > h4{
+        width: 100%;
+    }
+    .info > h3{
+        width: 100%;
+    }
+    .infoDescrip{
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .infoPrecio{
         font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
     }
     .specsGroup{
         margin-bottom: 20px;
@@ -1385,12 +1421,19 @@ list-style: none;
         align-items: center;
     }
     .menuHeader{
-        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         margin-left: 5%;
+        transition: none;
+        position: static;
     }
+    .cerrarMenu{ display: none;}
     .menuHeader > ul{
+        background: transparent;
+        width: auto;
+        height: auto;
         display: flex;
         font-weight: bold;
+        flex-direction: row;
     }
     .menuHeader > ul > li{
         font-size: 1rem;
@@ -1401,9 +1444,6 @@ list-style: none;
     }
     .searchHeader{
         width: 30%;
-    }
-    .tablet{
-        display: block;
     }
     /*HOME QUERY*/
     .contenedor-imgHome > div{
