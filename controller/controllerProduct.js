@@ -1,6 +1,6 @@
 const fs=require('fs');
 let jsonDb=require('../model/mainJson.js');
-let db=jsonDb('db');
+let db=jsonDb('products');
 
 const controllerProduct={
     productos:(req, res) =>{
