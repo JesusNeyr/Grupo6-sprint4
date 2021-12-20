@@ -1,7 +1,3 @@
-const fs=require('fs');
-const jsonDb=fs.readFileSync('./data/db.json');
-const db=JSON.parse(jsonDb);
-
 const controllerAdmin={
     index:(req,res)=>{
         res.render('admin/admin.ejs')
@@ -10,11 +6,7 @@ const controllerAdmin={
         res.render('admin/product/stockProduct.ejs')
     },
     ListProduct:(req,res)=>{
-        let Cat = []
-        let arregloCat = db.forEach(element => {
-            
-        });
-        res.render('admin/product/listProduct.ejs',{db:db})
+        res.render('admin/product/listProduct.ejs')
     },
 }
 module.exports=controllerAdmin;

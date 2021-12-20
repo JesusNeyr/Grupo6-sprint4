@@ -1,7 +1,3 @@
-const fs=require('fs');
-const jsonDb=fs.readFileSync('./data/db.json');
-const db=JSON.parse(jsonDb);
-
 const controllerPages = {
     'home': (req, res) => {
         res.render('pages/home.ejs')
