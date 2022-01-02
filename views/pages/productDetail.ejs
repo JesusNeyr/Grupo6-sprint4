@@ -11,6 +11,13 @@
                 <p class="infoDescrip">Espectacular pista de tren con paisaje de la ciudad</p>
                 <div class="buttonCarrito">AÑADIR A CARRITO</div>
                 <div class="redesProducDetail">Compartir: <i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i></div>
+                <div class="optionEdit">
+                    
+                    <form action="/products/<%= articulo.id %> " method="post">
+                        <div class="btnEditEli"><input type="submit" value="ELIMINAR"></div>
+                    </form>
+                    <div class="buttonCarrito"><a href="/products/<%= articulo.id %>/edit">EDITAR</a></div>
+                </div>
             </div>
             <div class="specs">
             <div class="specsInfo contDesktop">
@@ -56,10 +63,6 @@
                 </div>
                 <p>Pódes retirar tu compra online o bien hacer tu compra presencial</p>
             </div>
-            <form action="/products/<%= articulo.id %> " method="post">
-                <input type="submit" value="ELIMINAR">
-            </form>
-            <a href="/products/<%= articulo.id %>/edit">EDITAR</a>
         </div>
     </section>
     <section class="relacionados">

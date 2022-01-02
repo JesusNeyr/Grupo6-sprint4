@@ -960,6 +960,10 @@ list-style: none;
     border-radius: 5px;
     outline: 1px solid #333;
 }
+.buttonCarrito > a{
+    text-decoration: none;
+    color: inherit;
+}
 .redesProducDetail{
     display: flex;
     align-items: center;
@@ -1030,6 +1034,20 @@ list-style: none;
 .specsInfoResult{
     font-size: 1rem;
     color: #FF7878;
+}
+.optionEdit{
+    display: flex;
+}
+.btnEditEli > input{
+    background: #FF7878;
+    display: inline-block;
+    padding: 15px 5px;
+    font-weight: bolder;
+    border-radius: 5px;
+    outline: 1px solid #333;
+    border:none; 
+    margin: 10px;
+
 }
 /*relacionados*/
 .relacionados{
